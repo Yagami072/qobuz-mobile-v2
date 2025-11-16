@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11855286D73E4051A34EF925 /* MitsuhaEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141A2CB294A54C10A054789D /* MitsuhaEngine.swift */; };
+		1FCFF69E101E465BAA162FF1 /* MitsuhaWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3BF9E5DF1F44FDB643BCDD /* MitsuhaWaveView.swift */; };
+		D7675A8A719549CEBAC306B5 /* MitsuhaAudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC47ED105F1940A6B39AF677 /* MitsuhaAudioProcessor.swift */; };
+		3AEF0F0622654C77A29A62A1 /* MitsuhaBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E68C1963FD42E59F8BAFC4 /* MitsuhaBarView.swift */; };
 		0E8B517D09A7BD5253566F96 /* libPods-qobuzmobilev2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B747DE502659520C98018AB /* libPods-qobuzmobilev2.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141A2CB294A54C10A054789D /* MitsuhaEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitsuhaEngine.swift; sourceTree = "<group>"; };
+		CC3BF9E5DF1F44FDB643BCDD /* MitsuhaWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitsuhaWaveView.swift; sourceTree = "<group>"; };
+		FC47ED105F1940A6B39AF677 /* MitsuhaAudioProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitsuhaAudioProcessor.swift; sourceTree = "<group>"; };
+		61E68C1963FD42E59F8BAFC4 /* MitsuhaBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MitsuhaBarView.swift; sourceTree = "<group>"; };
 		0B747DE502659520C98018AB /* libPods-qobuzmobilev2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-qobuzmobilev2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE4D04EBCDA8F831110A0A2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = qobuzmobilev2/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* qobuzmobilev2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qobuzmobilev2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +116,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				75F4382FEF2AD906C22B659B /* Pods */,
 				3B3460832124F77087DAC1AF /* ExpoModulesProviders */,
+				8CC506FC17D145CC967A2CD3 /* MitsuhaEngine */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -129,6 +138,18 @@
 			);
 			name = Supporting;
 			path = qobuzmobilev2/Supporting;
+			sourceTree = "<group>";
+		};
+		8CC506FC17D145CC967A2CD3 /* MitsuhaEngine */ = {
+			isa = PBXGroup;
+			children = (
+				141A2CB294A54C10A054789D /* MitsuhaEngine.swift */,
+				CC3BF9E5DF1F44FDB643BCDD /* MitsuhaWaveView.swift */,
+				FC47ED105F1940A6B39AF677 /* MitsuhaAudioProcessor.swift */,
+				61E68C1963FD42E59F8BAFC4 /* MitsuhaBarView.swift */,
+			);
+			name = MitsuhaEngine;
+			path = MitsuhaEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +351,10 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				F5D0894EA668036F255BB245 /* ExpoModulesProvider.swift in Sources */,
+				11855286D73E4051A34EF925 /* MitsuhaEngine.swift in Sources */,
+				1FCFF69E101E465BAA162FF1 /* MitsuhaWaveView.swift in Sources */,
+				D7675A8A719549CEBAC306B5 /* MitsuhaAudioProcessor.swift in Sources */,
+				3AEF0F0622654C77A29A62A1 /* MitsuhaBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
