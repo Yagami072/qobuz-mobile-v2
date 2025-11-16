@@ -1,9 +1,9 @@
 import React from 'react';
-import { requireNativeComponent, ViewStyle, Platform } from 'react-native';
+import { requireNativeComponent, ViewStyle, Platform, ColorValue } from 'react-native';
 
 export interface MitsuhaVisualizerProps {
   style?: ViewStyle;
-  barColor?: string;
+  barColor?: ColorValue;
   barWidth?: number;
   barSpacing?: number;
   sensitivity?: number;
@@ -24,18 +24,15 @@ const MitsuhaVisualizer: React.FC<MitsuhaVisualizerProps> = ({
   smoothness = 0.2,
   waveStyle = 'mitsuha',
 }) => {
-  // Convert hex color to iOS UIColor format if needed
-  const processedColor = barColor;
-
   return (
     <NativeMitsuhaVisualizer
       style={style}
-      barColor={processedColor}
+      barColor={barColor}
       barWidth={barWidth}
       barSpacing={barSpacing}
       sensitivity={sensitivity}
       smoothness={smoothness}
-      waveStyle={waveStyle}
+      waveStyle={waveStyle as 'mitsuha' | 'bar'}
     />
   );
 };
