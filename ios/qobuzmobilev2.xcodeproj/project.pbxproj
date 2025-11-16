@@ -14,6 +14,10 @@
 		D5BDE61628E5191BAD098458 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 0BE4D04EBCDA8F831110A0A2 /* PrivacyInfo.xcprivacy */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 		F5D0894EA668036F255BB245 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58786F8A1892DB89AC16F029 /* ExpoModulesProvider.swift */; };
+		C177CE15D2F948CDA45FC807 /* MSHWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57C357D4E3845CB957C760A /* MSHWaveView.swift */; };
+		E602795721FF4F739EADE906 /* MSHJelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54A7F4783D46D382C75527 /* MSHJelloView.swift */; };
+		CB2B6850A3284F46990B16E6 /* MSHConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAC94E7BFB485B93666032 /* MSHConfig.swift */; };
+		4A03DF79A45F4A76B64424C8 /* MSHAudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0846352A98487A88876B46 /* MSHAudioProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = qobuzmobilev2/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* qobuzmobilev2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "qobuzmobilev2-Bridging-Header.h"; path = "qobuzmobilev2/qobuzmobilev2-Bridging-Header.h"; sourceTree = "<group>"; };
+		A57C357D4E3845CB957C760A /* MSHWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSHWaveView.swift; path = MitsuhaEngine/MSHWaveView.swift; sourceTree = "<group>"; };
+		CF54A7F4783D46D382C75527 /* MSHJelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSHJelloView.swift; path = MitsuhaEngine/MSHJelloView.swift; sourceTree = "<group>"; };
+		28AAC94E7BFB485B93666032 /* MSHConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSHConfig.swift; path = MitsuhaEngine/MSHConfig.swift; sourceTree = "<group>"; };
+		EF0846352A98487A88876B46 /* MSHAudioProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSHAudioProcessor.swift; path = MitsuhaEngine/MSHAudioProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				75F4382FEF2AD906C22B659B /* Pods */,
 				3B3460832124F77087DAC1AF /* ExpoModulesProviders */,
+				1B45313A85A04F639A7A3734 /* MitsuhaEngine */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -129,6 +138,18 @@
 			);
 			name = Supporting;
 			path = qobuzmobilev2/Supporting;
+			sourceTree = "<group>";
+		};
+		1B45313A85A04F639A7A3734 /* MitsuhaEngine */ = {
+			isa = PBXGroup;
+			children = (
+				A57C357D4E3845CB957C760A /* MSHWaveView.swift */,
+				CF54A7F4783D46D382C75527 /* MSHJelloView.swift */,
+				28AAC94E7BFB485B93666032 /* MSHConfig.swift */,
+				EF0846352A98487A88876B46 /* MSHAudioProcessor.swift */,
+			);
+			name = MitsuhaEngine;
+			path = MitsuhaEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +351,10 @@
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
 				F5D0894EA668036F255BB245 /* ExpoModulesProvider.swift in Sources */,
+				C177CE15D2F948CDA45FC807 /* MSHWaveView.swift in Sources */,
+				E602795721FF4F739EADE906 /* MSHJelloView.swift in Sources */,
+				CB2B6850A3284F46990B16E6 /* MSHConfig.swift in Sources */,
+				4A03DF79A45F4A76B64424C8 /* MSHAudioProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
