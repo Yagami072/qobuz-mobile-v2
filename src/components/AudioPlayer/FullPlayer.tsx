@@ -27,6 +27,7 @@ import type { Track } from '../../services/qobuz/types';
 import type { RootState } from '../../store/store';
 import { addToFavorites, removeFromFavorites } from '../../store/slices/favoritesSlice';
 import { createPlaylist, addTrackToPlaylist } from '../../store/slices/librarySlice';
+import MitsuhaVisualizer from '../MitsuhaVisualizer';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 const QUEUE_PANEL_HEIGHT = SCREEN_HEIGHT * 0.6;
@@ -596,6 +597,19 @@ const FullPlayer: React.FC<FullPlayerProps> = ({
             )}
           </View>
 
+          {/* Mitsuha Visualizer */}
+          {visible && (
+            <View style={styles.visualizerContainer}>
+              <MitsuhaVisualizer
+                style={styles.visualizer}
+                barColor="#1DB954"
+                sensitivity={1.8}
+                smoothness={0.25}
+                waveStyle="mitsuha"
+              />
+            </View>
+          )}
+
           {/* Progress Bar */}
           <View style={styles.progressContainer}>
             <Slider
@@ -1099,6 +1113,18 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     color: 'rgba(255,255,255,0.5)',
     textAlign: 'center',
+  },
+  visualizerContainer: {
+    width: '100%',
+    height: 80,
+    marginBottom: 20,
+    borderRadius: 12,
+    overflow: 'hidden',
+    backgroundColor: 'rgba(0,0,0,0.3)',
+  },
+  visualizer: {
+    width: '100%',
+    height: '100%',
   },
   progressContainer: {
     marginBottom: 30,
