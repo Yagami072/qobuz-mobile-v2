@@ -31,6 +31,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      "./plugins/withMitsuhaVisualizer.js"
+    ],
     "extra": {
       "eas": {
         "projectId": "872f3c13-f5ef-4d67-8e2f-3d6273cfcc1a"
